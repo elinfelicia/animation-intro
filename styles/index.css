@@ -1,0 +1,61 @@
+/*
+--lilac: #B79EC8ff;
+--jet: #3D3737ff;
+--champagne: #F4E5CEff;
+--tangerine: #EA8B2Dff;
+--selective-yellow: #FDB312ff;
+*/
+
+body {
+    background-color: #B79EC8ff;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #F4E5CEff;
+    text-shadow: 0px 0px 1px black;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header {
+    text-align: center;
+    margin: 20px auto 20px auto;
+    font-size: 20px;
+}
+.header__title {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 50px auto 0 auto;
+}
+.main__title {
+    text-align: center;
+    font-size: 25px;
+    margin: 40px;
+}
+img {
+    max-width: 400px;
+    width: 100%;
+    padding: 15px;
+    margin: 35px 10px 10px 10px;
+}
+#giraffe-1:hover {
+    opacity: 0;
+    transition: all 1s linear;
+}
+#giraffe-2:hover {
+    animation: imgDance .5s infinite alternate-reverse;
+}
+#giraffe-3:hover {
+    animation: imgRotate 1s;
+}
+@keyframes imgDance {
+    from {transform: rotate(-20deg);}
+    to {transform: rotate(20deg)}
+}
+@keyframes imgRotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(359deg)} 
+}
